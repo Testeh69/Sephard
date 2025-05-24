@@ -1,8 +1,12 @@
-SEPHARD
+![Sephard](./assets/sepherd.png)
+
+
+
+## SEPHARD
 
 SEPHARD is a lightweight C++ proxy designed to interface with the Ollama Large Language Model (LLM) server. Tailored for embedded systems like the Raspberry Pi, SEPHARD facilitates efficient api fetching with LLMs, making it ideal for mobile applications and resource-constrained environments.
 
-✨ Features To implement
+## 🧱 Planned Features
 
     Authentication: Implements API key-based authentication to secure access to the Ollama server.
 
@@ -11,7 +15,7 @@ SEPHARD is a lightweight C++ proxy designed to interface with the Ollama Large L
     Prompt Handling: Efficiently processes and forwards prompts to the Ollama server, ensuring seamless communication.
     GitHub
 
-🛠️ Built With
+## 🛠️ Built With
 
     C++11: Utilizes modern C++ features for robust and efficient performance.
 
@@ -19,7 +23,8 @@ SEPHARD is a lightweight C++ proxy designed to interface with the Ollama Large L
 
     libcurl: A client-side URL transfer library supporting various protocols.
 
-🚀 Getting Started
+## 🚀 Getting Started
+
 Prerequisites
 
 Ensure the following dependencies are installed on your system:
@@ -55,7 +60,7 @@ Installation
 
     make clean
 
-🧪 Usage
+## 🧪 Usage
 
 Once running, SEPHARD listens for incoming requests and forwards them to the Ollama server. Ensure that the Ollama server is running and accessible at the specified endpoint (default: http://localhost:11434/api/generate).
 
@@ -69,9 +74,11 @@ curl -X POST http://localhost:your_proxy_port \
 
 
 
-📝 License
+## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-📫 Contact
+
+
+## 📫 Contact
 
 For questions or suggestions, please open an issue on the GitHub repository.
