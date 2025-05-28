@@ -1,6 +1,6 @@
 TARGET = main
 
-SRC = main.cpp -lcurl
+SRC = main.cpp -lcurl json_utils.cpp
 
 ${TARGET} : ${SRC}
 	g++ ${SRC} -o ${TARGET}
@@ -8,6 +8,7 @@ ${TARGET} : ${SRC}
 
 go:
 	./main
+
 
 
 clean:
