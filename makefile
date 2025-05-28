@@ -1,8 +1,8 @@
 TARGET = main
 
 SRC = main.cpp\
-  	json_utils.cpp\
-	curl_utils.cpp\
+  	utils/json_utils.cpp\
+	utils/curl_utils.cpp\
 	-lcurl
 
 ${TARGET} : ${SRC}
