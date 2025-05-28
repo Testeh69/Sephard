@@ -4,7 +4,7 @@
 
 ## SEPHERD
 
-SEPHERD is a lightweight C++ proxy designed to interface with the Ollama Large Language Model (LLM) server. Tailored for embedded systems like the Raspberry Pi, SEPHARD facilitates efficient api fetching with LLMs, making it ideal for mobile applications and resource-constrained environments.
+SEPHERD is a lightweight C++ proxy designed to interface with the Ollama Large Language Model (LLM) server. Tailored for embedded systems like the Raspberry Pi, SEPHERD facilitates efficient api fetching with LLMs, making it ideal for mobile applications and resource-constrained environments.
 
 ## 🧱 Planned Features
 
@@ -45,7 +45,7 @@ Installation
 
     Clone the Repository:
 
-    git clone https://github.com/yourusername/sephard.git
+    git clone https://github.com/yourusername/sepherd.git
     cd sephard
 
     Build the Project:
