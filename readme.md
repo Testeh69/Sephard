@@ -6,11 +6,12 @@
 
 SEPHERD is a lightweight C++ proxy designed to interface with the Ollama Large Language Model (LLM) server. Tailored for embedded systems like the Raspberry Pi, SEPHERD facilitates efficient api fetching with LLMs, making it ideal for mobile applications and resource-constrained environments.
 
+
 ## 🧱 Planned Features
 
-    Authentication: Implements API key-based authentication to secure access to the Ollama server.
+    Aegis - Authentication: Implements API key-based authentication to secure access to the Ollama server.
 
-    Logging: Provides detailed logging of requests and responses for monitoring and debugging purposes.
+    Monocle - Logging: Provides detailed logging of requests and responses for monitoring and debugging purposes.
 
     Prompt Handling: Efficiently processes and forwards prompts to the Ollama server, ensuring seamless communication.
     GitHub
@@ -21,6 +22,8 @@ SEPHERD is a lightweight C++ proxy designed to interface with the Ollama Large L
 
     RapidJSON: A fast JSON parser and generator for C++.
 
+    cpp-httplib: A simple header for server for C++
+
     libcurl: A client-side URL transfer library supporting various protocols.
 
 ## 🚀 Getting Started
@@ -28,6 +31,8 @@ SEPHERD is a lightweight C++ proxy designed to interface with the Ollama Large L
 Prerequisites
 
 Ensure the following dependencies are installed on your system:
+    
+    cpp-httplib: For the http server
 
     libcurl: For HTTP requests.
 
@@ -62,7 +67,7 @@ Installation
 
 ## 🧪 Usage
 
-Once running, SEPHERD listens for incoming requests and forwards them to the Ollama server. Ensure that the Ollama server is running and accessible at the specified endpoint (default: http://localhost:11434/api/generate).
+Once running, SEPHERD listens for incoming requests and forwards them to the Ollama server. Ensure that the Ollama server is running and accessible at the specified endpoint (default: http://{adresse ip rasberry pi}:8080/sepherd).
 
 You can test the proxy by sending a JSON-formatted prompt using tools like curl or Postman:
 
