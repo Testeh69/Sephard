@@ -8,7 +8,8 @@
 std::string serializeJsonPrompt(const std::string& request){
     const char* json = R"({
         "model": "tinyllama",
-        "prompt":""
+        "prompt":"",
+        "stream":false
         
     })";
 
@@ -30,12 +31,9 @@ std::string serializeJsonPrompt(const std::string& request){
 
 
 
-
-std::optional<rapidjson::Document> convertStrInToJson(const std::string& target) {
+rapidjson::Document convertStrInToJson(const std::string& target) {
     rapidjson::Document document;
-    if (document.Parse(target.c_str()).HasParseError()) {
-        return std::nullopt;
-    }
+    document.Parse(target.c_str());
     return document;
 }
 

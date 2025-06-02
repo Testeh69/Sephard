@@ -2,7 +2,6 @@
 #include "../rapidjson/writer.h"
 #include "../rapidjson/stringbuffer.h"
 #include <string>
-#include <optional>
 
 #pragma once
 
@@ -14,7 +13,7 @@ std::string serializeJsonPrompt(const std::string& request);
 
 
 
-std::optional<rapidjson::Document> convertStrInToJson(const std::string& target);
+rapidjson::Document convertStrInToJson(const std::string& target);
 
 
 

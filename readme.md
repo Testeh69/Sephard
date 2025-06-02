@@ -9,9 +9,9 @@ SEPHERD is a lightweight C++ proxy designed to interface with the Ollama Large L
 
 ## 🧱 Planned Features
 
-    Authentication: Implements API key-based authentication to secure access to the Ollama server.
+    Aegis - Authentication: Implements API key-based authentication to secure access to the Ollama server.
 
-    Logging: Provides detailed logging of requests and responses for monitoring and debugging purposes.
+    Monocle - Logging: Provides detailed logging of requests and responses for monitoring and debugging purposes.
 
     Prompt Handling: Efficiently processes and forwards prompts to the Ollama server, ensuring seamless communication.
     GitHub
