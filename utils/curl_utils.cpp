@@ -7,7 +7,7 @@ size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
 }
 
 
-std::string requestHttp(const std::string& request){
+std::string requestHttpIntern(const std::string& request){
     std::string readBuffer;
     CURL* curl = curl_easy_init();
     if (curl){
@@ -33,3 +33,31 @@ std::string requestHttp(const std::string& request){
 
 
 }
+
+
+
+std::string requestHttpExtern(const std::string& request)
+    {
+    std::string readBuffer;
+    CURL* curl = curl_easy_init();
+    if (curl){
+        struct curl_slist* headers = nullptr;
+        headers = curl_slist_append(headers, "Content-Type: application/json");
+        std::string string_response;
+        curl_easy_setopt(curl, CURLOPT_URL, "http://0.0.0.0:5000/api");
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, request.c_str());
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
+        CURLcode msg = curl_easy_perform(curl);
+        curl_slist_free_all(headers);
+        curl_easy_cleanup(curl);
+        if (msg !=CURLE_OK){
+            std::cerr << "Erreur lors de la requete -> "<< curl_easy_strerror(msg)<<std::endl;
+        }
+        else {
+            return readBuffer;
+        }
+    }
+    return "Err";
+
+    }

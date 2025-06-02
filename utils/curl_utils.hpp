@@ -5,4 +5,7 @@
 
 
 
-std::string requestHttp(const std::string& request);
+std::string requestHttpIntern(const std::string& request);
+
+
+std::string requestHttpExtern(const std::string& request);
